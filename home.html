@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<div class="header">
+    <h1><img src="css/image/Kremaja Logo.jpg" height="149" width="500"/></h1>
+    <p><span>forum diskusi pelajar indonesia</span></p>
+
+    <div class="navbar">
+        <a class="homelogo" href="http://localhost:63342/kremaja/home.html?_ijt=aosptf6g2uft6okfa8ukqfvck2">Home</a>
+        <ul id="navbarul">
+            <li>
+                <input type="search" placeholder="Search">
+                <img id="searchIcon" src="http://www.clker.com/cliparts/z/w/Q/7/f/C/search-logo-hi.png" alt="none">
+            </li>
+            <li>
+                Log In
+            </li>
+            <li id="signUp">
+                Sign Up
+            </li>
+        </ul>
+    </div> <!-- change with include -->
+</div>
+<!-- {% include "header.html" %} -->
+<div id="main">
+    <h1 id="studLife">Student Life</h1>
+    <h4 id="date">selasa, 29 feb 2018, 13.15 WIB</h4>
+    <h1 id="topArticle">MAHASISWI UNIVERSITAS INDONESIA NIKAHI RAJA MINYAK SAUDI ARABIA</h1>
+    <h1 id="topArticle2">PERKOSA 5 AYAM KAMPUS, DOSEN UGM DIPENJARA 30 TAHUN</h1>
+    <h1 id="topArticle3">BANJIR BOGOR SEBABKAN 5 KAMPUS LIBUR</h1>
+    <div id="buttonConsole" style="text-align: center">
+    <button id="one">Article 1</button><button id="two">Article 2</button><button id="three">Article 3</button>
+    </div>
+    <div><p id="trendingImagePosition"><img id="trendingImage" src="http://files.brattle.com/images/homepageslide/11369_mobileimage.jpg"></p>
+        <p class="descTopic">Banjir bandang yang hancurkan 5 kabupaten, terus berlangsung menerjang kota-kota besar di pulau Jawa!
+            Berikut foto-foto pada TKP, pengumuman dari beberapa universitas, dan surat darurat dari pemerintahan!
+        </p>
+        <hr id="trendingbreak">
+        <ul id="discTrending">
+            <li>Hoax, saya tinggal di kalijaga tidak ada air sedi...</li>
+            <li>Pemerintah bohong soal bantuan banjir!</li>
+            <li>Kegiatan peling seru saat libur kuliah karena ban...</li>
+        </ul>
+    </div>
+
+
+    <div id="topic2">
+        <hr style="width: 100%">
+        <br style="height: 2%">
+        <p class="topicImagePosition"><img class="topicImage" src="https://vignette.wikia.nocookie.net/fairlyoddparents/images/4/40/SuperheroWish21.png/revision/latest?cb=20101101225221&path-prefix=en"></p>
+        <h2 class="topicTitle">Kartun anak-anak terbukti berbahaya untuk pertumbuhan si kecil</h2>
+        <p class="descTopic">Bacon ipsum dolor amet flank buffalo turducken capicola frankfurter turkey brisket pork chop cupim andouille rump drumstick ribeye biltong. Porchetta strip steak bresaola, ground round short ribs meatloaf picanha shank andouille pork belly capicola pastrami ham hock tail doner. Picanha kevin doner buffalo tongue sirloin porchetta burgdoggen swine ribeye. Chicken sirloin prosciutto, kevin meatball pork andouille strip steak corned beef beef ribs turkey sausage landjaeger meatloaf chuck.</p>
+    </div>
+
+    <div id="topic3">
+        <hr style="width: 100%">
+        <br style="height: 2%">
+        <p class="topicImagePosition"><img class="topicImage" src="https://vignette.wikia.nocookie.net/fairlyoddparents/images/4/40/SuperheroWish21.png/revision/latest?cb=20101101225221&path-prefix=en"></p>
+        <h2 class="topicTitle">Kartun anak-anak terbukti berbahaya untuk pertumbuhan si kecil</h2>
+        <p class="descTopic">Bacon ipsum dolor amet flank buffalo turducken capicola frankfurter turkey brisket pork chop cupim andouille rump drumstick ribeye biltong. Porchetta strip steak bresaola, ground round short ribs meatloaf picanha shank andouille pork belly capicola pastrami ham hock tail doner. Picanha kevin doner buffalo tongue sirloin porchetta burgdoggen swine ribeye. Chicken sirloin prosciutto, kevin meatball pork andouille strip steak corned beef beef ribs turkey sausage landjaeger meatloaf chuck.</p>
+    </div>
+</div>
+
+</div>
+
+<script>
+    document.getElementById("one").onclick = function(){functionOne()}
+    document.getElementById("two").onclick = function(){functionTwo()}
+    document.getElementById("three").onclick = function(){functionThree()}
+
+    function functionOne(){
+        document.getElementById("topArticle").style.visibility = "visible";
+        document.getElementById("topArticle").style.display = "block";
+        document.getElementById("topArticle2").style.visibility = "hidden";
+        document.getElementById("topArticle2").style.display = "none"
+        document.getElementById("topArticle3").style.visibility = "hidden";
+        document.getElementById("topArticle3").style.display = "none"
+    }
+    function functionTwo(){
+        document.getElementById("topArticle2").style.visibility = "visible";
+        document.getElementById("topArticle2").style.display = "block";
+        document.getElementById("topArticle").style.visibility = "hidden";
+        document.getElementById("topArticle").style.display = "none"
+        document.getElementById("topArticle3").style.visibility = "hidden";
+        document.getElementById("topArticle3").style.display = "none"
+    }
+    function functionThree(){
+        document.getElementById("topArticle3").style.visibility = "visible";
+        document.getElementById("topArticle3").style.display = "block";
+        document.getElementById("topArticle2").style.visibility = "hidden";
+        document.getElementById("topArticle2").style.display = "none"
+        document.getElementById("topArticle").style.visibility = "hidden";
+        document.getElementById("topArticle").style.display = "none"
+    }
+
+</script>
+
+</body>
+</html>
